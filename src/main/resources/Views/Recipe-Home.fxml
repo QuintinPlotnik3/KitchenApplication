@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.metrostate.Controller.RecipeController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d6b4fc" height="100.0" layoutX="37.0" layoutY="69.0" onMouseClicked="#switchToHome" stroke="BLACK" strokeType="INSIDE" width="230.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d6b4fc" height="100.0" layoutX="40.0" layoutY="485.0" onMouseClicked="#setDeleteButton" stroke="BLACK" strokeType="INSIDE" width="230.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffc94096" height="100.0" layoutX="40.0" layoutY="206.0" stroke="BLACK" strokeType="INSIDE" width="230.0" />
+      <TableView fx:id="recipeTable" layoutX="290.0" layoutY="180.0" onMouseClicked="#openRecipeModal" prefHeight="440.0" prefWidth="760.0" AnchorPane.bottomAnchor="40.0" AnchorPane.rightAnchor="40.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="39.0" text="ID" />
+          <TableColumn fx:id="nameColumn" prefWidth="219.0" text="NAME" />
+            <TableColumn fx:id="cuisineColumn" minWidth="0.0" prefWidth="114.0" text="CUISINE" />
+            <TableColumn fx:id="cookTimeColumn" prefWidth="98.0" text="COOK TIME" />
+            <TableColumn fx:id="servingsColumn" prefWidth="118.0" text="SERVINGS" />
+            <TableColumn fx:id="primaryIngredientColumn" minWidth="0.0" prefWidth="171.0" text="PRIMARY INGREDIENT" />
+        </columns>
+      </TableView>
+      <Text layoutX="105.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RECIPES" wrappingWidth="100.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="124.0" layoutY="126.0" onMouseClicked="#switchToHome" strokeType="OUTSIDE" strokeWidth="0.0" text="HOME" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="64.0" layoutY="540.0" onMouseClicked="#setDeleteButton" strokeType="OUTSIDE" strokeWidth="0.0" text="DELETE RECIPE" textAlignment="CENTER" wrappingWidth="188.26836395263672">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d6b4fc" height="100.0" layoutX="40.0" layoutY="341.0" onMouseClicked="#switchToAddRecipe" stroke="BLACK" strokeType="INSIDE" width="230.0" />
+      <Text layoutX="55.0" layoutY="399.0" onMouseClicked="#switchToAddRecipe" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD NEW RECIPE" textAlignment="CENTER" wrappingWidth="202.083197651562">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="searchBar" layoutX="294.0" layoutY="65.0" prefHeight="74.0" prefWidth="767.0" promptText="Search By Name">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

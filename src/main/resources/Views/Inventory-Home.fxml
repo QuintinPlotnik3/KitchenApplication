@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.metrostate.Controller.InventoryController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d6b4fc" height="100.0" layoutX="40.0" layoutY="57.0" onMouseClicked="#switchToHome" stroke="BLACK" strokeType="INSIDE" width="230.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d6b4fc" height="100.0" layoutX="40.0" layoutY="510.0" onMouseClicked="#switchToEditIngredient" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d6b4fc" height="100.0" layoutX="40.0" layoutY="355.0" stroke="BLACK" strokeType="INSIDE" width="230.0" AnchorPane.rightAnchor="832.0" AnchorPane.topAnchor="359.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffc94096" height="100.0" layoutX="40.0" layoutY="206.0" stroke="BLACK" strokeType="INSIDE" width="230.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="206.0" />
+        <TableView fx:id="inventoryTable" layoutX="290.0" layoutY="180.0" onMouseClicked="#openIngredientModal" prefHeight="440.0" prefWidth="760.0" AnchorPane.bottomAnchor="40.0" AnchorPane.rightAnchor="40.0">
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="47.0" text="ID" />
+                <TableColumn fx:id="name" prefWidth="202.0" text="NAME" />
+                <TableColumn fx:id="expiryDate" minWidth="0.0" prefWidth="93.0" text="EXP. DATE" />
+                <TableColumn fx:id="primaryMacroNutrient" prefWidth="130.0" text="PRIMARY MACRO" />
+                <TableColumn fx:id="storage" prefWidth="82.0" text="STORAGE" />
+                <TableColumn fx:id="quantity" minWidth="0.0" prefWidth="105.0" text="QUANTITY" />
+                <TableColumn fx:id="category" prefWidth="100.0" text="CATEGORY" />
+            </columns>
+        </TableView>
+        <Text layoutX="49.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INVENTORY" textAlignment="CENTER" wrappingWidth="212.0">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Text>
+        <Text layoutX="121.0" layoutY="115.0" onMouseClicked="#switchToHome" strokeType="OUTSIDE" strokeWidth="0.0" text="HOME" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Text>
+        <Text layoutX="70.0" layoutY="568.0" onMouseClicked="#switchToEditIngredient" strokeType="OUTSIDE" strokeWidth="0.0" text="EDIT" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Text>
+        <Text layoutX="70.0" layoutY="413.0" onMouseClicked="#switchToAddIngredient" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD NEW ITEM" textAlignment="CENTER" wrappingWidth="166.0">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Text>
+      <TextField fx:id="searchBar" layoutX="300.0" layoutY="57.0" prefHeight="74.0" prefWidth="760.0" promptText="Search By Name">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d6b4fc" height="100.0" layoutX="168.0" layoutY="510.0" onMouseClicked="#setDeleteButton" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+      <Text layoutX="168.0" layoutY="567.0" onMouseClicked="#setDeleteButton" strokeType="OUTSIDE" strokeWidth="0.0" text="DELETE" textAlignment="CENTER" wrappingWidth="100.00000298023224">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>

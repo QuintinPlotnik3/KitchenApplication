@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #fc9ea6;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.metrostate.Controller.EditIngredient">
+   <children>
+      <Text layoutX="-3.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD TO INVENTORY LIST" textAlignment="CENTER" wrappingWidth="408.13671875">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8cc4f8" height="70.0" layoutX="51.0" layoutY="66.4" stroke="BLACK" strokeType="INSIDE" width="300.0" AnchorPane.bottomAnchor="272.0" AnchorPane.leftAnchor="51.0" AnchorPane.rightAnchor="49.0" AnchorPane.topAnchor="66.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8cc4f8" height="54.0" layoutX="211.0" layoutY="312.0" onMouseClicked="#saveButton" stroke="BLACK" strokeType="INSIDE" width="140.0" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="211.0" AnchorPane.rightAnchor="49.0" AnchorPane.topAnchor="312.0" />
+      <Text layoutX="55.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NEW EXPIRY DATE" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="253.0" layoutY="347.0" onMouseClicked="#saveButton" strokeType="OUTSIDE" strokeWidth="0.0" text="SAVE" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="newExpiry" layoutX="211.0" layoutY="81.0" prefHeight="40.0" prefWidth="122.0" AnchorPane.topAnchor="81.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8cc4f8" height="70.0" layoutX="50.0" layoutY="145.0" stroke="BLACK" strokeType="INSIDE" width="300.0" />
+      <TextField fx:id="inStock" layoutX="211.0" layoutY="160.0" prefHeight="40.0" prefWidth="122.0" />
+      <Text layoutX="69.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IN STOCK">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8cc4f8" height="54.0" layoutX="51.0" layoutY="312.0" onMouseClicked="#IngredientBackButton" stroke="BLACK" strokeType="INSIDE" width="140.0" />
+      <Text layoutX="92.0" layoutY="348.0" onMouseClicked="#IngredientBackButton" strokeType="OUTSIDE" strokeWidth="0.0" text="BACK" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8cc4f8" height="70.0" layoutX="50.0" layoutY="229.0" stroke="BLACK" strokeType="INSIDE" width="300.0" />
+      <Text layoutX="67.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Amount">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="addQuantity" layoutX="211.0" layoutY="244.0" prefHeight="40.0" prefWidth="122.0" />
+   </children>
+</AnchorPane>

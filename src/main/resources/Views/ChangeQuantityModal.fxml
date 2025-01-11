@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #fc9ea6;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.metrostate.Controller.ChangeQuantityModalController">
+   <children>
+      <Text layoutX="128.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD" textAlignment="CENTER" wrappingWidth="143.13671875">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8cc4f8" height="70.0" layoutX="50.0" layoutY="101.0" onMouseClicked="#handleAddToInventoryClick" stroke="BLACK" strokeType="INSIDE" width="300.0" AnchorPane.bottomAnchor="229.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="101.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8cc4f8" height="70.0" layoutX="50.0" layoutY="200.0" onMouseClicked="#handleAddToGroceryListClick" stroke="BLACK" strokeType="INSIDE" width="300.0" AnchorPane.bottomAnchor="130.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="200.0" />
+      <Text layoutX="90.0" layoutY="145.0" onMouseClicked="#handleAddToInventoryClick" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD TO INVENTORY" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="76.0" layoutY="244.0" onMouseClicked="#handleAddToGroceryListClick" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD TO GROCERY LIST" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8cc4f8" height="70.0" layoutX="50.0" layoutY="297.0" onMouseClicked="#handleBackButtonClick" stroke="BLACK" strokeType="INSIDE" width="300.0" />
+      <Text layoutX="76.0" layoutY="341.0" onMouseClicked="#handleBackButtonClick" strokeType="OUTSIDE" strokeWidth="0.0" text="BACK" textAlignment="CENTER" wrappingWidth="246.0703125">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
