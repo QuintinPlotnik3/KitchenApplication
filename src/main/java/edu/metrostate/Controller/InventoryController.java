@@ -1,5 +1,6 @@
 package edu.metrostate.Controller;
 
+import edu.metrostate.Controller.AddItemToInventory.AddItemManager;
 import edu.metrostate.Main;
 import edu.metrostate.Model.*;
 import javafx.collections.FXCollections;
@@ -73,7 +74,7 @@ public class InventoryController implements Initializable {
         FXMLLoader loader = new FXMLLoader(Main.class.getResource("/Views/AddToInventory.fxml"));
         Parent root = loader.load();
         // Get the controller
-        AddIngredientToInventoryController controller = loader.getController();
+        AddItemManager controller = loader.getController();
         // Pass the parent controller to the child controller
         controller.setInventoryController(this);
         controller.setRoot(root);

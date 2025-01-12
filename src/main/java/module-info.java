@@ -9,4 +9,5 @@ module Application {
     exports edu.metrostate.Model;
     opens edu.metrostate.Model to javafx.base, javafx.fxml;
     opens edu.metrostate to javafx.base, javafx.fxml;
+    opens edu.metrostate.Controller.AddItemToInventory to javafx.fxml;
 }

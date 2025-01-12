@@ -34,8 +34,6 @@ public class AddIngredientToRecipeController implements Initializable {
     @FXML private TableColumn<Ingredient, Integer> ingredientSelectionQuantityColumn;
 
     AddToRecipeController addToRecipeController;
-
-
     private IngredientList ingredientList = new IngredientList();
     private Ingredient primaryIngredient;
 
@@ -52,7 +50,6 @@ public class AddIngredientToRecipeController implements Initializable {
     }
 
     public void handleSaveIngredientsToRecipe(MouseEvent event) {
-
         if (ingredientList.getIngredients().isEmpty()) {
             Util.displayErrorMessage("Ingredient", "You must select at least one ingredient");
             return;
@@ -72,7 +69,6 @@ public class AddIngredientToRecipeController implements Initializable {
     }
 
     public void populateListTable() throws SQLException {
-
         ingredientListTable.getItems().clear();
         ObservableList<Ingredient> items = loadIngredientsFromDB();
         ingredientListTable.setItems(items);
@@ -86,12 +82,10 @@ public class AddIngredientToRecipeController implements Initializable {
         ingredientSelectionTable.refresh();
     }
 
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         ingredientListNameColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
         listPrimaryMacroColumn.setCellValueFactory(new PropertyValueFactory<>("primaryMacroNutrient"));
-
         ingredientSelectionNameColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
         selectionPrimaryMacroColumn.setCellValueFactory(new PropertyValueFactory<>("primaryMacroNutrient"));
         ingredientSelectionQuantityColumn.setCellValueFactory(new PropertyValueFactory<>("quantity"));
